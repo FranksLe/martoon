@@ -84,7 +84,9 @@
     [self.tableView setBackgroundView:imageView];
     self.tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height / 7*2)];
     
-    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSDate *date = [NSDate date];
+    NSLog(@"dadada %@ %@", formatter, date);
     //创建轮播图CollectionView
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     flowLayout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height / 7*2);
